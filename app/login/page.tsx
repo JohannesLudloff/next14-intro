@@ -1,6 +1,6 @@
 'use client';
 
-import { lusitana } from '@/app/ui/fonts';
+import { robotoMono } from '@/app/ui/fonts';
 import {
     AtSymbolIcon,
     KeyIcon,
@@ -17,7 +17,7 @@ export default function LoginForm() {
     return (
         <form action={dispatch} className="space-y-3">
             <div className="flex-1 px-6 pt-8 pb-4 rounded-lg bg-gray-50">
-                <h1 className={`${lusitana.className} mb-3 text-2xl`}>
+                <h1 className={`${robotoMono.className} mb-3 text-2xl`}>
                     Please log in to continue.
                 </h1>
                 <div className="w-full">

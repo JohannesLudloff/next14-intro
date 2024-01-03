@@ -1,14 +1,14 @@
 import { ArrowPathIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 import Image from 'next/image';
-import { lusitana } from '@/app/ui/fonts';
+import { robotoMono } from '@/app/ui/fonts';
 import { fetchLatestInvoices } from '@/app/lib/data';
 
 export default async function LatestInvoices() {
   const latestInvoices = await fetchLatestInvoices();
   return (
     <div className="flex flex-col w-full md:col-span-4">
-      <h2 className={`${lusitana.className} mb-4 text-xl md:text-2xl`}>
+      <h2 className={`${robotoMono.className} mb-4 text-xl md:text-2xl`}>
         Latest Invoices
       </h2>
       <div className="flex flex-col justify-between p-4 grow rounded-xl bg-gray-50">
@@ -44,7 +44,7 @@ export default async function LatestInvoices() {
                   </div>
                 </div>
                 <p
-                  className={`${lusitana.className} truncate text-sm font-medium md:text-base`}
+                  className={`${robotoMono.className} truncate text-sm font-medium md:text-base`}
                 >
                   {invoice.amount}
                 </p>
